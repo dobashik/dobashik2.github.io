@@ -1,0 +1,306 @@
+body{
+    margin: 0;
+    background-color: lightsteelblue;
+}
+
+header i{
+    color: pink;
+    display: inline;
+}
+
+.header-containt{
+    margin: 0;
+    padding-top: 20px;
+    padding-bottom: 10px;
+}
+
+nav ul{
+    text-align: right;
+}
+
+
+nav li{
+    display: inline;
+    padding: 0 10px;
+}
+
+nav a{
+    color: black;
+    text-decoration: none;
+}
+
+nav a:hover{
+    text-decoration: underline;
+    color: black;
+}
+
+.first{
+    background-image: url("../img/top-back.jpg");
+    background-repeat: no-repeat; /* 背景画像を繰り返し表示しません。 */
+    background-size: cover;/* contain → cover　*/
+  background-position: center;/* 追加　*/
+    margin-top: 62px;
+    padding-top: 50px;
+    padding-bottom: 90px;
+}
+
+.first-left h2{
+    color: gray;
+    padding-top: 100px;
+    padding-left: 50px;
+}
+
+.first-left p{
+    color: white;
+    font-size: 22px;
+    padding-left: 50px;
+    padding-top: 20px;
+}
+
+form.right-form{
+    background-color: white;
+    padding: 20px;
+    margin-top: 20px;
+    /*角を丸くする*/
+    border-radius: 20px;
+}
+
+.top-submit{
+    text-align: center;
+}
+
+.top-submit-in{
+    background-color: rgb(34, 30, 30);
+    color: white;
+    padding: 15px 40px 15px 40px;
+    border-radius: 8%;
+}
+
+.btn-primary:hover{
+    background-color: white !important;;
+    color: black !important;;
+    border: none !important;;
+}
+
+.kakutyou{
+    background-color: white;
+    color: black;
+    border: none;
+}
+
+.kakutyou:hover{
+    background-color: white;
+    color: black;
+    border: none;
+}
+
+.form1{
+    padding: 20px 0px;
+    padding-left: 10px;
+}
+
+.second{
+    background-color:whitesmoke;
+    padding-top: 50px;
+}
+
+.second h1{
+    padding-bottom: 20px;
+}
+
+.section-h2{
+    padding-top: 20px;
+}
+
+.uriage-flow{
+    padding-bottom: 35px;
+
+}
+
+.uriage-flow img{
+    border-radius: 10px;
+}
+
+.img-fluid{
+    max-width:85%;
+
+}
+
+.uriage-flow h2{
+    font-size:30px;
+}
+
+.uriage-flow a{
+    color: black;
+    font-weight: bold; 
+}
+
+.third{
+    padding-top: 20px;
+    background-color: white;
+}
+
+.start{
+    margin-bottom: 20px;
+}
+
+.third-p{
+    padding: 30px 0;
+}
+
+.third-img{
+    border-radius: 5%;
+}
+
+.third-content{
+    padding-bottom: 50px;
+}
+
+.third-content a{
+    text-decoration: none;
+    color: cadetblue;
+}
+
+.third-content a:hover{
+    text-decoration: underline;
+}
+
+.hr-style{
+    margin: 0;
+}
+
+.forth{
+    padding-top: 50px;
+    padding-bottom: 50px;
+    background-color:darkslategrey;
+    color: white;
+}
+
+.forth-title{
+    text-align: center;
+}
+
+.forth-row{
+    padding-top: 20px;
+}
+
+.forth img{
+    border-radius: 10%;
+    /*padding-bottom: 20px; これを付けると、下側の角丸がきかなくなる*/
+    /*max-width:80%;*/
+    margin-bottom: 20px;
+
+}
+
+.forth-img{
+    text-align: center;
+}
+
+
+.forth i{
+    padding-top: 30px;
+    padding-bottom: 20px;
+}
+
+.forth a{
+    color: white;
+}
+
+.forth a:hover{
+    color:white;
+    text-decoration: underline;
+}
+
+.forth-right{
+    background-color: yellowgreen;
+    border-radius: 10%;
+    padding-left: 30px;
+    padding-right: 30px;
+    padding-bottom: 20px;
+    /*width: 85%;*/
+    height: 100%;
+    margin:0 auto;
+}
+
+.fifth{
+    padding-top: 50px;
+    padding-bottom: 50px;
+    background-color: white;
+}
+
+.fifth i{
+
+    color: pink;
+}
+
+.i-sonota{
+    padding-right: 20px;
+}
+
+.fifth h3{
+    display: inline;
+}
+
+.fifth p{
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+
+.i-sonota{
+    padding-right: 20px;
+}
+
+.i-training{
+    padding-right: 12px;
+}
+
+.sixth{
+    padding-top: 30px;
+    padding-bottom: 50px;
+    background-color:lightblue;
+}
+
+.w20{
+    width:50%;
+}
+
+.sixth button{
+    margin-top: 10px;
+}
+
+
+.seventh{
+    padding: 50px 0;
+}
+
+/*通常は、リンクの下線を消してhoverしたときだけ下線を出すように
+aとa:hoverで設定する*/
+.seventh a{
+    color: black;
+    text-decoration: none;
+    display: block;
+    padding-bottom: 10px;
+}
+
+.seventh a:hover{
+    text-decoration: underline;
+}
+
+.seventh p{
+    font-weight: bold;
+}
+
+footer{
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+
+footer a{
+    color: black;
+    text-decoration: none;
+}
+
+footer a:hover{
+    text-decoration: underline;
+    color: black;
+}

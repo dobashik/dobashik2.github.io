@@ -1,0 +1,451 @@
+<!doctype html>
+<html lang="ja">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/custom.css">
+    
+    <!--font Awesomeのスクリプト-->
+    <script src="https://kit.fontawesome.com/5136400a27.js" crossorigin="anonymous"></script>
+
+　<!-- bootstrap-datepicker（カレンダー機能）を読み込む -->
+<link rel="stylesheet" type="text/css" href="../bootstrap-datepicker-1.6.4-dist/css/bootstrap-datepicker.min.css">
+<script type="text/javascript" src="../bootstrap-datepicker-1.9.0-dist/js/bootstrap-datepicker.min.js"></script>
+<script type="text/javascript" src="../bootstrap-datepicker-1.9.0-dist/locales/bootstrap-datepicker.ja.min.js"></script>
+
+    <title>即効性のある売上アップ講座</title>
+  </head>
+  <body>
+    <header class="fixed-top bg-light">
+      <div class="container-fluid header-containt">
+        <div class="row">
+          <div class="col-md-6">
+            <a href="#"><i class="fas fa-campground fa-2x"></i></a>
+          </div>
+          <div class="col-md-6 nav-content">
+            <nav class="navbar navbar-expand-lg navbar-light bg-light">
+              <div class="container-fluid">
+                <a class="navbar-brand" href="#">Service</a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                  <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                  <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                    <li class="nav-item">
+                      <a class="nav-link active" aria-current="page" href="#">Home</a>
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link active" href="#">Contact</a>
+                    </li>
+                    <li class="nav-item dropdown">
+                      <a class="nav-link dropdown-toggle active" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                        Price
+                      </a>
+                      <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                        <li><a class="dropdown-item" href="#">PlanA</a></li>
+                        <li><a class="dropdown-item" href="#">PlanB</a></li>
+                        <li><hr class="dropdown-divider"></li>
+                        <li><a class="dropdown-item" href="#">Planc</a></li>
+                        
+                      </ul>
+                    </li>
+                  </ul>
+                  <form class="d-flex">
+                    <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+                    <button class="btn btn-outline-success" type="submit">Search</button>
+                  </form>
+                </div>
+              </div>
+            </nav>
+          </div>
+        </div>
+      </div>           
+    </header>
+
+    <div class="container-fluid first">
+      <div class="row">
+        <div class="col-md-6 first-left">
+          <h2>御社の売り上げアップに貢献します。</h2>
+          <p>
+            ビジネスにおける迅速な効果を表す。<br>
+            ITツールを用いた売り上げアップの実現
+          </p>
+        </div>
+        <div class="col-md-6">
+          <form class="right-form">
+            <p>
+              あなたの会社の売上をアップする講座に参加しましょう。
+            </p>
+            <div class="mb-3">
+<!--                <label for="exampleInputEmail1" class="form-label">開催日</label>-->
+              <input type="date" class="form-control container-fluid form1" id="exampleInputEmail1 date_sample" aria-describedby="emailHelp">
+            
+              <!--<label for="exampleInputPassword1" class="form-label">氏名</label>-->
+              <input type="text" class="form-control container-fluid form1" id="sei" placeholder="姓">
+              <input type="text" class="form-control container-fluid form1" id="mei" placeholder="名">
+              <select id="select1a" class="form-control form1">
+                <option value=''>講座を選択してください</option>
+                <option>講座 A：初級編　月収売り上げ50万を作る</option>
+                <option>講座 B:中級編　月収売り上げ100万を作る</option>
+                <option>講座 C:上級編　月収売り上げ200万を作る</option>
+              </select>
+<!--フォームを横並びにしたいとき
+              <div class="row">
+                <div class="col-md-6">
+                  <input type="text" class="form-control " id="sei" placeholder="姓">
+                </div>
+                <div class="col-md-6">
+                  <input type="text" class="form-control" id="mei" placeholder="名">
+                </div>  
+             </div>
+            -->
+            <!--+で表示させる
+          　bootstrapの折り畳みのコードをコピー
+            buttonの枠を消したり、背景を白、黒文字にして、
+            
+            -->
+            <button type="button" class="btn btn-primary kakutyou" data-bs-toggle="collapse" data-bs-target="#collapseExample" aria-expanded="false" aria-controls="collapseExample">
+              +詳細を入力する
+            </button>
+            　<div class="collapse" id="collapseExample">
+   
+              <!--<label for="exampleInputPassword1" class="form-label">氏名</label>-->
+              <input type="text" class="form-control container-fluid form1" id="sei" placeholder="メールアドレス">
+              <input type="text" class="form-control container-fluid form1" id="sei" placeholder="住所">
+              <input type="text" class="form-control container-fluid form1" id="mei" placeholder="電話番号">
+            </div>
+            </div>
+            <div class="top-submit">
+            <button type="submit" class="btn btn-primary top-submit-in">売上アップ講座に申し込む</button>
+            </div>
+          </form>
+        </div>
+
+      </div>
+
+    </div><!--end of first-->
+
+    <div class="container-fluid second">
+      <div class="row content-second">
+        <div class="col-md">
+          <h1>売上アップの流れ</h1>
+        </div>
+        <div class="row uriage-flow">
+          <div class="col-md-3 section">
+            <img src="img/1.jpg" alt="SEO対策" class="img-fluid">
+         </div>
+         <div class="col-md-3 section">
+          <h2 class="section-h2">SEO対策</h2>
+          <p>
+           御社の商品やサービスをサイトで紹介するとともに、
+           SEO対策をしていきます。売上アップのために、専門の
+           スタッフがライティングやSEO施策を致します。
+          </p>
+          <a href="#">詳細を見る</a>
+       </div>
+
+         <div class="col-md-3 section">
+          <img src="img/2.jpg" alt="SEO対策" class="img-fluid">
+        </div>
+        <div class="col-md-3 section">
+          <h2 class="section-h2">広告運用</h2>
+          <p>
+           御社の商品やサービスを広告運用します。PPC広告や
+           SNS広告など、それぞれの特性と御社の商品やサービス
+          との相性を見て運用していきます。</S>
+          </p>
+          <a href="#">詳細を見る</a>
+        </div>
+      </div><!--end of row-->
+
+      <div class="row  uriage-flow">
+       <div class="col-md-3 section">
+        <img src="img/3.jpg" alt="SEO対策" class="img-fluid">
+       </div>
+       <div class="col-md-3 section">
+        <h2 class="section-h2">LP作成</h2>
+        <p>
+         御社の商品やサービスのLPを作成します。マーケティング
+         施策を行い、ターゲットを明確に設定し対象となる見込み客
+         にアプローチしていきます。
+        </p>
+        <a href="#">詳細を見る</a>
+       </div>
+      <div class="col-md-3 section">
+       <img src="img/4.png" alt="SEO対策" class="img-fluid">
+     </div>
+     <div class="col-md-3 section">
+      <h2 class="section-h2">アフターフォロー</h2>
+      <p>
+       御社の商品やサービスの購入者に対して、アフタフォローを
+       することで満足度アップをします。メルマガやラインなどを
+       使いアプローチしていきます。
+     </p>
+     <a href="#">詳細を見る</a>
+    </div>
+
+    </div><!--end of row-->
+    </div><!--end of second-->
+
+    <div class="container-fluid third">
+      <div class="row">
+        <div class="col-md-6 third-content">
+          <h2>こんなに皆さん成果が出ています</h2>
+        <p class="third-p">売上アップ講座に参加すると、マンツーマンでの
+          サポートを受けられるので、<br>
+          こんなにも成果が出ています。<br>
+          いつでも気軽に参加でき、劇的な成果アップを期待できます。
+        </p>
+        <a href="#"><button type="button" class="btn btn-danger start">はじめる</button></a>
+        </div>
+        <div class="col-md-6 third-content">
+          <img src="img/5.jpg" alt="売上アップ成功" class="img-fluid third-img">
+        </div>
+      </div><!--end of row--> 
+
+      <div class="row">
+        <div class="col-md-6 third-content order-md-2">
+          <h2>株式会社ポート様</h2>
+        <p class="third-p">講座を受けて2か月で、売上が100万達成しました。<br>
+          分からないところもサポートのおかげですぐに解決！
+        </p>
+        <a href="#">株式会社ポート様をチェックする</a>
+        </div> 
+        <div class="col-md-6 third-content order-md-1">
+          <img src="img/p1.jpg" alt="株式会社ポート様" class="img-fluid third-img">
+        </div>
+      </div><!--end of row-->
+
+      <div class="row">
+        <div class="col-md-6 third-content">
+          <h2>株式会社ABC様</h2>
+        <p class="third-p">マンツーマンサポートのおかげで、売上50%アップです。<br>
+          オンラインツールも使いやすくマーケティングに最適です。
+        </p>
+        <a href="#">株式会社ABC様をチェックする</a>
+        </div>
+        <div class="col-md-6 third-content">
+          <img src="img/p2.jpg" alt="株式会社ポート様" class="img-fluid third-img">
+        </div>
+      </div><!--end of row-->
+
+    </div><!--end of third-->
+
+    <hr class="hr-style">
+
+    <div class="container-fluid forth">
+      <div class="row">
+        <h2 class="forth-title">ここアップは、皆さんの売り上げアップに貢献していきます。</h2>
+      </div>
+      <div class="row forth-row">
+        <div class="col-md-6 forth-img">
+          <img src="img/6.jpg" alt="保障" class="img-fluid ">
+        </div>
+        <div class="col-md-5">
+          <div class="forth-right">
+            <i class="fas fa-shield-alt fa-3x"></i>
+            <h2>1年間成果保障</h2>
+            <p>お申込み頂いてから、1年間成果
+              出なかった場合には、全額返金致します。
+            </p>
+            <a href="#">1年間成果保障の詳細</a>
+          </div>
+            
+        </div>
+        <div class="col-md-1 forth-padding">
+        </div>
+
+
+      </div>
+
+      <div class="row forth-row">
+        <div class="col-md-6 forth-img">
+          <img src="img/7.jpg" alt="保障" class="img-fluid">
+        </div>
+        <div class="col-md-5">
+          <div class="forth-right">
+            <i class="fas fa-address-card fa-3x"></i>
+            <h2>直接面談</h2>
+            <p>直接面談により、御社にあった売上アップ の方法をカスタマイズし提供します。
+            </p>
+            <a href="#">直接の面談によるサポートの詳細</a>
+          </div>
+          </div>
+         
+        <div class="col-md-1 forth-padding">
+        </div>
+      </div>
+      
+
+      <div class="row forth-row">
+        <div class="col-md-6 forth-img">
+          <img src="img/8.jpg" alt="保障" class="img-fluid">
+        </div>
+        <div class="col-md-5">
+          <div class="forth-right">
+            <i class="fas fa-laptop fa-3x"></i>
+            <h2>オンラインツール</h2>
+            <p>オンラインツールにより、売り上げアップサポート を行っていきます。
+            </p>
+            <a href="#">オンラインツールの詳細</a>
+          </div>
+        </div>
+        <div class="col-md-1 forth-padding">
+        </div>
+      </div>
+
+    </div><!--end of forth-->
+
+    <div class="fifth">
+      <div class="container-fluid ">
+        <div class="row">
+          <div class="col-md-6">
+            <h2>弊社が全力でサポートします。</h2>
+          </div>
+          <div class="col-md-6">
+            <div class="accordion" id="accordionExample">
+              <div class="accordion-item">
+                <h2 class="accordion-header" id="headingOne">
+                  <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                    <i class="fas fa-phone fa-2x i-sonota"></i>24時間365日の電話サポート
+                  </button>
+                </h2>
+                <div id="collapseOne" class="accordion-collapse collapse" aria-labelledby="headingOne" data-bs-parent="#accordionExample">
+                  <div class="accordion-body">
+                    電話でオンラインツールの使い方のサポートや、
+                    売上アップのための施策に関するお問い合わせを受け付けます。          
+                    どのようなことでも丁寧にサポートさせていただきます。
+                    マーケティングに関することや、セールスレターに関するお問い合わせも
+                    受け付けております。
+                  </div>
+                </div>
+              </div>
+              <div class="accordion-item">
+                <h2 class="accordion-header" id="headingTwo">
+                  <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                    <i class="fas fa-tools fa-2x i-sonota"></i>役立つ様々なツール
+                  </button>
+                </h2>
+                <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo" data-bs-parent="#accordionExample">
+                  <div class="accordion-body">
+                    弊社で提供するツールを使えば、様々な料金設定や、予約管理、
+              アクセス解析などを一元管理することができます。           
+            　ツールの使い方は、オンラインの動画やマニュアルが用意してあるので、
+            誰でも簡単に操作することができます。
+            分からないことがあるときには、電話やメールでのお問い合わせもご利用になれます。
+            </div>
+                </div>
+              </div>
+              <div class="accordion-item">
+                <h2 class="accordion-header" id="headingThree">
+                  <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                    <i class="fas fa-graduation-cap fa-2x i-training"></i>トレーニング
+                  </button>
+                </h2>
+                <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree" data-bs-parent="#accordionExample">
+                  <div class="accordion-body">
+                    売上アップにつながる、LPの作成やメルマガ配信の方法など
+                    についてマンツーマンでトレーニングを受けることができます。  
+                  　御社の売り上げをアップするために、御社の社員のスキルアップをお手伝いします。
+                  継続的に売り上げをアップするために、人材の育成にもサポートします。
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          
+        </div><!--end of row-->
+
+      </div>
+
+    </div><!--end of fifth-->
+
+    <hr class="hr-style">
+
+    <div class="sixth container-fluid">
+      <div class="row">
+        <div class="col-md-6">
+          <h2>売上アップをする準備はできましたか？</h2>
+        <p>
+          どんな業種でも、インターネットを通じて売上アップを 実現することができます。弊社にぜひ、サポートをさせて 下さい。
+        </p>
+        <form>
+          <div class="mb-3">
+            <label for="exampleInputEmail1" class="form-label">メールアドレス</label>
+            <input type="email" class="form-control w20" id="exampleInputEmail1" aria-describedby="emailHelp">
+            <button type="submit" class="btn btn-danger">はじめる</button>
+        </div>
+        </form>
+        </div>
+        <div class="col-md-6">
+
+        </div>        
+
+      </div>
+
+    </div><!--end of sixth-->
+
+    <hr class="hr-style">
+
+      <div class="container-fluid seventh">
+        <div class="row">
+          <div class="col-md-3">
+            <p>サービス情報</p>
+            <a href="#">当サービスの利用方法</a>
+            <a href="#">当サービスの利用料金</a>
+            <a href="#">企業情報詳細</a>
+            <a href="#">株主・投資家の方へ</a>
+          </div>
+          <div class="col-md-3">
+            <p>コミュニティ</p>
+            <a href="#">コミュニティサービスコミューン</a>
+            <a href="#">コミュニティの利用方法</a>
+            <a href="#">コミュニティサービスの利用料金</a>
+          </div>
+          <div class="col-md-3">
+            <p>利用者情報</p>
+            <a href="#">当サービスの利用者A</a>
+            <a href="#">当サービスの利用者B</a>
+            <a href="#">当サービスの利用者C</a>
+          </div>
+          <div class="col-md-3">
+            <p>サポート</p>
+            <a href="#">サポートの詳細</a>
+            <a href="#">ツールの利用方法</a>
+            <a href="#">サポートはこちら</a>
+            <a href="#">お問い合わせ</a>
+          </div>
+          
+        </div><!--end of row-->
+
+      </div><!--end of seventh-->
+
+      <hr class="hr-style">
+
+      <footer>
+        <span>&copy;2021 株式会社コミューン </span><a href="#">プライバシー</a>
+        <span>・</span><a href="#">利用規約</a>
+        <span>・</span><a href="#">サイトマップ</a>
+        <span>・</span><a href="#">企業情報</a>
+
+      </footer><!--end of footer-->
+
+      
+
+    <!-- Optional JavaScript; choose one of the two! -->
+      
+      <!-- Option 1: Bootstrap Bundle with Popper -->
+      <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-ygbV9kiqUc6oa4msXn9868pTtWMgiQaeYH7/t7LECLbyPA2x65Kgf80OJFdroafW" crossorigin="anonymous"></script>
+      
+      <!-- Option 2: Separate Popper and Bootstrap JS -->
+      <!--
+        <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js" integrity="sha384-q2kxQ16AaE6UbzuKqyBE9/u/KzioAlnx2maXQHiDX9d4/zp8Ok3f+M7DPm+Ib6IU" crossorigin="anonymous"></script>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/js/bootstrap.min.js" integrity="sha384-pQQkAEnwaBkjpqZ8RU1fF1AKtTcHJwFl3pblpTlHXybJjHpMYo79HY3hIi4NKxyj" crossorigin="anonymous"></script>
+      -->
+    
+  </body>
+</html>
